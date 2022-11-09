@@ -1,0 +1,68 @@
+:root {
+  --primary: #018FFE;
+  --programming: #FE7001;
+  --personal: var(--primary);
+  --light: #ffffffb4;
+  --grey: #888;
+  --dark: #313154;
+  --alert: #ff5b57;
+
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --programming-glow: 0px 0px 4px rgba(255, 111, 0, 0.75);
+  --personal-glow: 0px 0px 4px rgba(1, 143, 254, 0.75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: initial;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+
+section {
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+}
+
+h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  color: var(--grey);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.greeting .title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.create-todo input[type="text"] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: var(--dark);
+  background-color: var(--light);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
