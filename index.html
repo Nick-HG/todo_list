@@ -5,10 +5,91 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo List</title>
-</head>
-<body>
-  Hello there
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <main class="app">
+
+    <section class="greeting">
+      <h2 class="title">Todo List</h2>
+    </section>
+
+    <section class="create-todo">
+      <h3>Add todo</h3>
+      
+      <form id="todo-form">
+        <input type="text" name="content" id="content" placeholder="e.g. go shopping">
+
+        <h4>Projects</h4>
+        <div class="options">
+
+          <label>
+            <input type="radio" name="category" id="category1" value="test1">
+            <span class="bubble test1"></span>
+            <div class="test1">Test1</div>
+          </label>
+
+          <label>
+            <input type="radio" name="category" id="category2" value="test2">
+            <span class="bubble test2"></span>
+            <div class="test2">Test2</div>
+          </label>
+        </div>
+
+        <input type="submit" value="Add todo">
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <h3>Todo List</h3>
+
+      <div class="list" id="todo-list">
+        <div class="tood-item">
+          <label>
+            <input type="checkbox">
+            <span class="bubble test1"></span>
+          </label>
+          
+          <div class="todo-content">
+            <input type="text" value="Buy groceries" readonly>
+          </div>
+
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+
+        <div class="tood-item">
+          <label>
+            <input type="checkbox">
+            <span class="bubble test2"></span>
+          </label>
+          
+          <div class="todo-content">
+            <input type="text" value="Complete a workout" readonly>
+          </div>
+
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+  </main>
   <script src="main.js"></script>
 </body>
 </html>
