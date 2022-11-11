@@ -20,10 +20,13 @@ window.addEventListener('load', () => {
 
     DisplayTodos();    
   })
+  //Always display stored todos on load/refresh
+  DisplayTodos();
 })
 
 function DisplayTodos() {
   const todoList = document.querySelector('#todo-list');
+  //can it be changed to .textContent?
   todoList.innerHTML = "";
 
 	todos.forEach(todo => {
@@ -54,6 +57,7 @@ function DisplayTodos() {
     edit.classList.add('edit');
     deleteButton.classList.add('delete');
 
+    //should these be changed to .textContent
     content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
     edit.innerHTML = 'Edit';
     deleteButton.innerHTML = 'Delete';
