@@ -40,6 +40,8 @@ function DisplayTodos() {
 		const actions = document.createElement('div');
 		const edit = document.createElement('button');
 		const deleteButton = document.createElement('button');
+    const dropdown = document.createElement('button');
+    const priorityLvl = document.createElement('button'); 
 
     input.type = 'checkbox';
 		input.checked = todo.done;
@@ -56,16 +58,22 @@ function DisplayTodos() {
     actions.classList.add('actions');
     edit.classList.add('edit');
     deleteButton.classList.add('delete');
+    dropdown.classList.add('dropdown');
+    priorityLvl.classList.add('priority-lvl');
 
-    //should these be changed to .textContent
+    //can these be changed to .textContent?
     content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
     edit.innerHTML = 'Edit';
     deleteButton.innerHTML = 'Delete';
+    dropdown.innerHTML = `<i class="fa-solid fa-caret-down"></i>`;
+    priorityLvl.innerHTML = `<i class="fa-solid fa-flag"></i>`;
 
     label.appendChild(input);
     label.appendChild(span);
+    actions.appendChild(priorityLvl);
     actions.appendChild(edit);
     actions.appendChild(deleteButton);
+    actions.appendChild(dropdown);
 
     todoItem.appendChild(label);
     todoItem.appendChild(content);
