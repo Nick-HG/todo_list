@@ -185,6 +185,7 @@ input:checked ~ .bubble::after {
 	font-size: 1.125rem;
 }
 
+/* Actions */
 .todo-item .actions {
 	display: flex;
 	align-items: center;
@@ -228,4 +229,12 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
 	text-decoration: line-through;
 	color: var(--grey);
+}
+
+/* Todo item expand panel */
+.panel {
+	padding: 1rem;
+	background-color: var(--grey);
+	display: none;
+	overflow: hidden;
 }
