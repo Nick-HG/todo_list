@@ -238,3 +238,8 @@ input:checked ~ .bubble::after {
 	display: none;
 	overflow: hidden;
 }
+
+.panel .active {
+	display: block;
+	width: 100%;
+}
